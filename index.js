@@ -181,8 +181,14 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(array, string){
-    /*your code here*/
+    let newArray = [];
+    for(let i = 0; i < array.length; i++ ){
+        if(array[i].includes(string)){
+            newArray.push(array[i]);
+        }
+    } return newArray;
 }
+console.log(filterByWord(originalFlavors, "chocolate"));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
